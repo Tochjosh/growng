@@ -2,8 +2,9 @@
 .App {
   display: flex;
   flex-direction: column;
-  max-width: 100% !important;
-  overflow-x: hidden !important;
+  /*max-width: 100% !important;*/
+  width: 100%;
+  /*overflow-x: hidden !important;*/
 }
 
 

@@ -5,6 +5,10 @@ import Bikes from "./Bikes";
 import Bike from "./bike.png";
 import Details from "./Details";
 import Stories from "./Stories";
+import './body.css'
+import {Carousel} from "react-bootstrap";
+
+
 
 const kits = [
     {
@@ -31,86 +35,51 @@ const kits = [
 const Body = () => {
     // const data = kits.map( kit => (<BicycleKit key={kit.id} kit={kit}/>))
     return (
-        <Wrapper>
-            <Wrap>
+        <div className='cover-wrapper'>
+            <div className='cover-wrap'>
                 <Header/>
                 <OuterBorder>
-                <Marquee gradientWidth={150} style={
-                    {   paddingBottom: "0.6em",
-                        // paddingLeft: "2em",
-                        display: 'flex',
-                        justifyContent: 'space-around',
-                        speed: "60",
-                        // gap: '2em',
-                        border: '1em',
-                        fontFamily: 'Mulish',
-                        width: '50%',
-                        }}>
+                <Marquee gradientWidth={100} pauseOnHover={true}>
+                    <div className='cover-container'>
+                        {kits.map(kit => {
+                            return (
 
-                    {kits.map(kit => {
-                        return (
-                            <Container>
-                               <Border>
-                                <H3>{kit.name}</H3>
-                                <Img>
-                                    <img src={kit.img} alt='bike'/>
-                                </Img>
-                                   <hr/>
-                                <Bottom>
-                                    <LeftSide>
-                                        <P>Price</P>
-                                        <H3>{kit.price}</H3>
-                                    </LeftSide>
-                                    <RightSide>
-                                        <Button>Order</Button>
-                                    </RightSide>
-                                </Bottom>
-                                </Border>
-                            </Container>
-                        )
-                    })}
-                </Marquee>
+                                   <Border>
+                                    <H3>{kit.name}</H3>
+                                    <Img>
+                                        <img src={kit.img} alt='bike'/>
+                                    </Img>
+                                       <hr/>
+                                    <Bottom>
+                                        <LeftSide>
+                                            <P>Price</P>
+                                            <H3>{kit.price}</H3>
+                                        </LeftSide>
+                                        <RightSide>
+                                            <Button>Order</Button>
+                                        </RightSide>
+                                    </Bottom>
+                                    </Border>
+
+                            )
+                        })}
+                    </div>
+                    </Marquee>
                 </OuterBorder>
+
+
+            </div>
+            <div className="bike-cover">
                 <Bikes/>
-                <Details/>
-                <Stories/>
-            </Wrap>
-        </Wrapper>
+            </div>
+
+            <Details/>
+            <Stories/>
+        </div>
 )}
 
 export default Body
 
-const Wrapper = styled.div`
-display: flex;
-flex-direction: column;
-padding-left: 10em;
-
-`
-
-const Wrap = styled.div`
-display: flex;
-flex-direction: column;
-margin: 0 auto;
-padding: 1em;
-`
-
-
-
-const Container = styled.div`
-display: flex;
-flex-direction: column;
-padding: 1.4em;
-justify-content: space-between;
-border-radius: 5%;
-font-family: Mulish;
-color: #7D7987;
-margin-left: 1em;
-
-h3 {
-font-family: Mulish;
-}
-
-`
 
 const H3 = styled.h3`
 
@@ -173,6 +142,6 @@ background-color: #F6F5F2;
 `
 
 const OuterBorder = styled.div`
- width: 100%;
-
+ width: 70%;
+ margin: 0 auto;
 `

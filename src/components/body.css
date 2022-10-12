@@ -1,0 +1,25 @@
+.cover-container{
+    display: flex;
+    width: 1000%;
+    margin-top: 4rem;
+    justify-content: space-around;
+}
+
+.cover-container h3{
+    font-family: Mulish;
+}
+.cover-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.div-wrap{
+
+}
+
+@media only screen and (max-width: 600px) {
+    .bike-cover{
+        display: none;
+    }
+}

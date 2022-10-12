@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Mulish&display=swap');
+/*.header{*/
+/*    display: flex;*/
+/*    margin: 7em;*/
+/*    padding-left: 7em;*/
+/*}*/
+.container1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.container-leftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'mulish';
+    height: 100%;
+    padding-top: 8rem;
+}
+
+
+
+.cover{
+    border: 1px solid #7D7987;
+    border-radius: 50px;
+    width: 400px;
+    background: none;
+    height: 40px;
+    padding: 3px;
+}
+.proceed{
+    border-radius: 50px;
+    height: 38px;
+    width: 25%;
+    border: none;
+    background-color: #FFBD37;
+}
+.form-input{
+    width: 74%;
+    height: 38px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding-left: 2px;
+}
+.inputs{
+    width: 60%;
+    padding: 0.45em;
+    padding-right:6em;
+    position: relative;
+}
+.inputs input {
+    padding-right: 0.5em;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.form-inner{
+    float: left;
+    width: 30%;
+    padding: 0.2em;
+    flex: 0.3;
+    margin-top: 70px;
+}
+
+
+.container-rightSide{
+
+}
+.container{
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .cover{
+        border: 1px solid #7D7987;
+        border-radius: 50px;
+        width: 350px;
+        background: none;
+        height: 30px;
+        padding: 3px;
+    }
+
+    .proceed{
+    border-radius: 50px;
+    height: 30px;
+    width: 24%;
+    border: none;
+    background-color: #FFBD37;
+    }
+    .form-input{
+        width: 74%;
+        height: 28px;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        padding-left: 2px;
+    }
+
+}

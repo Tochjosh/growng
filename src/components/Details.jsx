@@ -39,10 +39,12 @@ export default Details
 
 const Container = styled.div`
 margin: 0 auto;
-padding-right: 57em;
+//padding-right: 57em;
 `
 const Border = styled.div`
 display: flex;
+flex-wrap: wrap;
+justify-content: center;
 gap: 1em;
 `
 const Img = styled.div`

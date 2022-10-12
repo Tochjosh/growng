@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Mulish&display=swap');
+
+.wrapper{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    z-index:1000;
+    width: 100%;
+    background-color: #E5E5E5;
+}
+
+.leftSide{
+    /*width: 400px;*/
+    display: flex;
+    float: left;
+    height: 8vh;
+    padding: 0.5em;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.burger{
+    display: none;
+}
+
+.leftsideInner{
+    background-color: #FCB72B;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.leftsideInner h1 {
+    /*position: absolute;*/
+    left: 6%;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 30px;
+    color: #233348;
+    mix-blend-mode: normal;
+}
+
+.leftsideInner{
+position: relative;
+
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rightSide{
+
+}
+
+.rightSide ul{
+    list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 10vh;
+      display: flex;
+      float: right;
+      align-items: center;
+}
+
+.rightSide ul li{
+    float: right;
+    text-decoration: none;
+}
+
+.rightSide ul li a{
+    display: block;
+    padding: 0.8em;
+    color: #233348;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px){
+    .burger{
+        display: block;
+    }
+
+    .list{
+        display: none;
+    }
+}

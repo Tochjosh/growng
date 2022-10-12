@@ -3,42 +3,45 @@ import styled from 'styled-components'
 
 const Footer = () => {
     return (
-  <Container>
-      <Center>
-      <LeftSide>
-        <LogoName>
-            <Img><h2>B</h2></Img>
-            <Ebike><h3>eBike</h3></Ebike>
-        </LogoName>
-        <MiddleLeft>
-            <p>Trafalgar provides progressive and affordable<br/> healthcare, accessible on mobile and online<br/> for everyone</p>
-        </MiddleLeft>
-          <div className="bottom">
-              <Copyright> &copy;2022 copyright <AllRight>All rights reserved</AllRight> </Copyright>
-          </div>
-      </LeftSide>
-      <RightSide>
-          <LeftRight>
-              <h3>Company</h3>
-              <ul className="list-inline">
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Bike Type</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-          </LeftRight>
-          <RightRight>
-              <h3>Help</h3>
-              <ul className="list-inline">
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">Contact Support</a></li>
-                <li><a href="#">Instructions</a></li>
-                <li><a href="#">How It Works</a></li>
-              </ul>
-          </RightRight>
-      </RightSide>
-      </Center>
-  </Container>
+        <>
+              <Container>
+                  <Center>
+                  <LeftSide>
+                    <LogoName>
+                        <Img><h2>B</h2></Img>
+                        <Ebike><h3>eBike</h3></Ebike>
+                    </LogoName>
+                    <MiddleLeft>
+                        <p>Trafalgar provides progressive and affordable<br/> healthcare, accessible on mobile and online<br/> for everyone</p>
+                    </MiddleLeft>
+                      <div className="bottom">
+                          <Copyright> &copy;2022 copyright <AllRight>All rights reserved</AllRight> </Copyright>
+                      </div>
+                  </LeftSide>
+                  <RightSide>
+                      <LeftRight>
+                          <h3>Company</h3>
+                          <ul className="list-inline">
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Bike Type</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                          </ul>
+                      </LeftRight>
+                      <RightRight>
+                          <h3>Help</h3>
+                          <ul className="list-inline">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Support</a></li>
+                            <li><a href="#">Instructions</a></li>
+                            <li><a href="#">How It Works</a></li>
+                          </ul>
+                      </RightRight>
+                  </RightSide>
+                  </Center>
+              </Container>
+
+            </>
 )}
 
 export default Footer
@@ -51,6 +54,8 @@ min-height: 30vh;
 background-color: #FFC44B;
 color: white;
 display: flex
+flex-wrap: wrap;
+
 `
 
 const LeftSide = styled.div`
@@ -68,6 +73,7 @@ flex: 0.4;
 const Copyright = styled.div`
 display: flex;
 flex-direction: row
+flex-wrap: wrap;
 align-items: flex-start;
 `
 
@@ -94,6 +100,11 @@ ul {
 }
 li {
 padding-bottom: 0.5em;
+}
+
+@media (max-width: 600px) {
+    display: none;
+    margin-bottom: 1rem;
 }
 `
 
@@ -142,6 +153,7 @@ const Center = styled.div`
 width: 80%;
 margin: 0 auto;
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
 `
 

@@ -49,15 +49,7 @@ const Bikes = () => {
             <Body>
                 {bikes.map(bike => {
                     return (
-                        <Marquee gradientWidth={80} style={{
-                            paddingBottom: "0.6em",
-                            justifyContent: 'space-between',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            border: '1em',
-                            fontFamily: 'Mulish',
-                            width: '50%',
-                        }}>
+                        <Marquee gradientWidth={100}>
                             <Wrap>
                                 <Img><img src={bike.img} alt='bikes'/></Img>
                                 <P><p>{bike.name}</p></P>
@@ -77,16 +69,20 @@ export default Bikes;
 const Container = styled.div`
 display: flex;
 flex-direction: column;
-width: 80%;
-margin: 10em;
+width: 90%;
+margin-left: 10%;
+//margin: 0 auto;
+margin-top: 60px;
+margin-bottom: 60px;
 `
 const Title = styled.div`
 font-family: Mulish;
-padding-left: 1em;
 color: #7D7987;
+
 
 `
 const Body = styled.div`
+margin: 0 auto;
 display: flex;
 width: 70%;
 `

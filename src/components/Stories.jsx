@@ -4,7 +4,7 @@ import man from './preview 1.png'
 
 const Stories = () => {
     return (
-        <Container>
+        // <Container>
             <Wrapper>
                 <Top>
                     <h3>What our customers are saying</h3>
@@ -24,7 +24,7 @@ const Stories = () => {
                     </BottomRight>
                 </Bottom>
             </Wrapper>
-        </Container>
+        // </Container>
     )
 }
 
@@ -33,18 +33,22 @@ export default Stories;
 const Container = styled.div`
 margin: 0 auto;
 align-items: center;
-padding-right: 75em;
+//padding-right: 75em;
 
 `
 
 const Wrapper = styled.div`
 background-color: #FCB72B;
 padding: 0.5em;
-margin: 10em;
-width: 100%;
+width: 50%;
 height: 70%;
-border-radius: 2% 2% 2% 2%;
-
+border-radius: 2%;
+margin: 0 auto;
+margin-top: 4rem;
+margin-bottom: 4rem;
+ @media only screen and (max-width: 600px) {
+    width: 90%;
+ }
 `
 
 const Top = styled.div`
