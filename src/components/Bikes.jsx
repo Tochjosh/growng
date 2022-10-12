@@ -78,6 +78,7 @@ const Container = styled.div`
 display: flex;
 flex-direction: column;
 width: 80%;
+margin: 10em;
 `
 const Title = styled.div`
 font-family: Mulish;
@@ -87,16 +88,15 @@ color: #7D7987;
 `
 const Body = styled.div`
 display: flex;
-width:70%;
-
-
-
+width: 70%;
 `
 const Img = styled.div`
 background-color: #F6F5F2;
 width:12em
 border: 1px solid black;
 border-radius: 7%;
+box-shadow: 10px 10px 50px rgba(0,0,0,.1);
+
 `
 
 const P = styled.div`

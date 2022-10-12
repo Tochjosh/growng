@@ -165,7 +165,8 @@ border: none;
 
 `
 const Border = styled.div`
-border: 1px solid black;
+// border: 0.1px solid black;
+box-shadow: 10px 10px 50px rgba(0,0,0,.1);
 padding: 0.5em;
 border-radius: 5%;
 background-color: #F6F5F2;

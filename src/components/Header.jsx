@@ -35,7 +35,8 @@ export default Header;
 
 const Container = styled.div`
 display: flex;
-
+margin: 7em;
+padding-left: 7em
 `
 
 const RightSide = styled.div`

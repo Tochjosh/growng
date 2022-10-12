@@ -46,11 +46,10 @@ display: flex;
 gap: 1em;
 `
 const Img = styled.div`
-background-color: #F6F5F2;
 `
 
 const Bottom = styled.div`
-border-top:1px solid #7D7987;
+border-top: 1px solid black;
 display: flex;
 justify-content: flex-start;
 align-items: center;
@@ -78,16 +77,15 @@ border-radius: 50px 50px 50px 50px;
 const LeftSide = styled.div`
 display: flex;
 flex-direction: column;
-border: 1px solid black;
+box-shadow: 10px 10px 50px rgba(0,0,0,.1);
 padding: 1em;
 border-radius: 5%;
-background-color: #F6F5F2;
 
 img {
 }
 
 button {
-background-color: #FFBD37
+background-color: #FFBD37;
 }
 `
 
